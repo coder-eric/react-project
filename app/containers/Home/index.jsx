@@ -1,5 +1,7 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
+import './style.less'
+import HeaderComponent from './subpage/header.jsx';
 
 class Home extends React.Component {
     constructor(props, context) {
@@ -8,8 +10,8 @@ class Home extends React.Component {
     }
     render() {
         return (
-            <div>
-                <h1>home</h1>
+            <div className="home">
+                <HeaderComponent />
             </div>
         )
     }

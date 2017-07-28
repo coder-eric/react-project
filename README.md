@@ -1,3 +1,3 @@
-# react-simple-o2o-demo
+# react模仿大众点评
 
 代码尚在开发中
