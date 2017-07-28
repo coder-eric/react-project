@@ -1,5 +1,6 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
+import { Link } from 'react-router'
 
 class Header extends React.Component {
     constructor(props, context) {
@@ -9,13 +10,22 @@ class Header extends React.Component {
     render() {
         return (
             <div className="header">
-                <div className="left">北京</div>
-                <div className="right"><i>图标</i></div>                
-                <div className="middle">
-                    <input type="text" placeholder="输入商户名、地点"/>
+                 <Link className="left" to="/city">
+                    {this.props.cityName}
+                     <i className="icon-angle-down"></i> 
+                </Link>
+                <div className="middle" onClick={this.handleSearchClick.bind(this)}>
+                    <i className="icon-search"></i>
+                    输入商户名、地点
                 </div>
+                <Link className="right" to="/user"></Link>                                
             </div>
         )
+    }
+
+    //点击搜索
+    handleSearchClick() {
+        alert(123)
     }
 }
 
