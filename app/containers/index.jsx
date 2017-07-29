@@ -6,6 +6,10 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as userInfoActionsFromOtherFile from '../actions/userinfo.js'
 
+import FastClick from '../util/fastclick.js'
+
+FastClick.attach(document.body);
+
 class App extends React.Component {
     constructor(props, context) {
         super(props, context);

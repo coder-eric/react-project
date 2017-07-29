@@ -14,7 +14,7 @@ class Category extends React.Component {
 
     render() {
         var options = {
-            auto: 3000,
+            // auto: 5000,
             speed:1000,
             callback: (index, elem) => {
                 this.setState({
