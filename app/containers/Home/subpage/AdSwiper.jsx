@@ -2,6 +2,8 @@ import React from "react";
 import PureRenderMixin from "react-addons-pure-render-mixin";
 import { Link } from "react-router";
 
+var timer = null;
+
 class AdSwiper extends React.Component {
   constructor(props, context) {
     super(props, context);
@@ -11,6 +13,7 @@ class AdSwiper extends React.Component {
     this.state = {
       index: 0,
       speed: 2000,
+      timer: null,
       style: {
         transform: "translateY(0px)",
         transition: "all 1s"
@@ -22,7 +25,7 @@ class AdSwiper extends React.Component {
     var index = this.state.index;
     var speed = this.state.speed;
 
-    setInterval(() => {
+    timer = setInterval(() => {
       if (index <= 2) {
         index++;
       } else {
@@ -31,6 +34,7 @@ class AdSwiper extends React.Component {
       this.setState({ index: index });
       this.upDate();
     }, speed);
+   
   }
 
   upDate() {
@@ -41,6 +45,12 @@ class AdSwiper extends React.Component {
       }
     });
   }
+
+
+  componentWillUnmount() {
+      clearInterval(timer);
+  }
+  
   render() {
     return (
       <div className="ad-swiper border-top">

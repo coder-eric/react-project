@@ -45,7 +45,7 @@ class App extends React.Component {
             this.setState({
                 initDone: true
             })
-        },0)
+        },1000)
     }
 }
 

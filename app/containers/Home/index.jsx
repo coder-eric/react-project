@@ -18,6 +18,7 @@ class Home extends React.Component {
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
         this.state = {
             category: [],
+            myscroll:null,
             options: {
                 mouseWheel: true,
                 scrollbars: true
@@ -40,10 +41,24 @@ class Home extends React.Component {
             }
         });
 
-        var myScroll = new IScroll(this.refs.iscroll, {
-            scrollX: false,
-            scrollY: true
-        });
+        this.initScroll(); 
+    }
+
+    initScroll() {
+        setTimeout(() => {
+            var myscroll = new IScroll(this.refs.iscroll, {
+                scrollX: false,
+                scrollY: true
+            });
+
+            this.setState({
+                myscroll: myscroll
+            })
+        }, 100);
+    }
+
+    handleUpDateList() {
+        this.state.myscroll.refresh();
     }
 
     render() {
@@ -53,7 +68,7 @@ class Home extends React.Component {
             freeScroll: true,
             invertWheelDirection: true,
             momentum: false
-}
+        }
         return (
             <div className="home">
                 <Header cityName={this.props.userinfo.cityName}/>
@@ -64,7 +79,7 @@ class Home extends React.Component {
                         <AdLink />
                         <InfoSection /> 
                         <InfoSection />
-                        <List />
+                        <List updateList={this.handleUpDateList.bind(this)}/>
                     </div>                
                  </div>  
             </div>

@@ -1,0 +1,49 @@
+{
+    "ret": true,
+    "data": [{
+        "url": "/detail/1",
+        "sign": "",
+        "img": "https://p0.meituan.net/deal/726c539fae70c89191790a3c7fb92c7e59707.jpg%40180w_180h_1e_1c_1l_80q%7Cwatermark%3D0",
+        "firstTitle": "汉堡王",
+        "secondTitle": "[新华大街]低至0.5折大果粒草莓新地2份阿什顿发斯蒂芬阿萨斯东方闪电阿斯蒂芬阿斯蒂芬",
+        "price": 12,
+        "prePrice": 26,
+        "count": 256
+    },{
+        "url": "/detail/2",
+        "sign": "免预约",
+        "img": "https://p0.meituan.net/deal/726c539fae70c89191790a3c7fb92c7e59707.jpg%40180w_180h_1e_1c_1l_80q%7Cwatermark%3D0",
+        "firstTitle": "汉堡王",
+        "secondTitle": "[新华大街]低至0.5折大果粒草莓新地2份阿什顿发斯蒂芬阿萨斯东方闪电阿斯蒂芬阿斯蒂芬",
+        "price": 12,
+        "prePrice": 26,
+        "count": 256
+    },{
+        "url": "/detail/3",
+        "sign": "",
+        "img": "https://p0.meituan.net/deal/726c539fae70c89191790a3c7fb92c7e59707.jpg%40180w_180h_1e_1c_1l_80q%7Cwatermark%3D0",
+        "firstTitle": "汉堡王",
+        "secondTitle": "[新华大街]低至0.5折大果粒草莓新地2份阿什顿发斯蒂芬阿萨斯东方闪电阿斯蒂芬阿斯蒂芬",
+        "price": 12,
+        "prePrice": 26,
+        "count": 256
+    },{
+        "url": "/detail/4",
+        "sign": "免预约",
+        "img": "https://p0.meituan.net/deal/726c539fae70c89191790a3c7fb92c7e59707.jpg%40180w_180h_1e_1c_1l_80q%7Cwatermark%3D0",
+        "firstTitle": "汉堡王",
+        "secondTitle": "[新华大街]低至0.5折大果粒草莓新地2份阿什顿发斯蒂芬阿萨斯东方闪电阿斯蒂芬阿斯蒂芬",
+        "price": 12,
+        "prePrice": 26,
+        "count": 256
+    },{
+        "url": "/detail/5",
+        "sign": "超便宜",
+        "img": "https://p0.meituan.net/deal/726c539fae70c89191790a3c7fb92c7e59707.jpg%40180w_180h_1e_1c_1l_80q%7Cwatermark%3D0",
+        "firstTitle": "汉堡王",
+        "secondTitle": "[新华大街]低至0.5折大果粒草莓新地2份阿什顿发斯蒂芬阿萨斯东方闪电阿斯蒂芬阿斯蒂芬",
+        "price": 12,
+        "prePrice": 26,
+        "count": 256
+    }]
+}
