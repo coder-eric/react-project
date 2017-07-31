@@ -49,6 +49,7 @@ class App extends React.Component {
     }
 }
 
+//----------------------------------------------- 连接 redux ---------------------------------------------
 function mapStateToProps(state) {
     return {}
 }

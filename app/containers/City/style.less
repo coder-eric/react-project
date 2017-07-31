@@ -5,22 +5,25 @@
     right:0;
     bottom: 0;
     background: #f0f0f0;
+    overflow: hidden;
     .header{
         background: #fff;
         height: 45px;
         padding: 0 10px;
         color: #333;
         position: relative;
-        display: box;
+        display: flex;
         display: -webkit-box;
         display: -ms-flexbox;
         z-index: 300;
         -webkit-box-sizing: border-box;
         .back{
-            padding-left: 18px;
+            height:45px;
+            line-height: 45px;
+            font-size: 20px;
             position: relative;
             display: block;
-            background: #f63;
+            color: #f63;
         }
         .back:after{
             border: 2px solid #f63;
@@ -58,7 +61,7 @@
             .active{
                 background: #f63;
             }
-            .innside{
+            .inside{
                 border-top-left-radius: 5px;
                 border-bottom-left-radius: 5px;
             }
@@ -126,6 +129,21 @@
                 -webkit-box-sizing: border-box;
                 display: inline-block;
                 width: 33.33%;
+                line-height: 48px;
+                background: #fff;
+                border-bottom: 1px solid #ededed;
+                border-right: 1px solid #ededed;
+                text-align: center;
+                color: #323232;
+                font-size: 16px;
+            }
+        }
+        .more{
+            li{
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                display: inline-block;
+                width: 20%;
                 line-height: 48px;
                 background: #fff;
                 border-bottom: 1px solid #ededed;

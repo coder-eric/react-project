@@ -9,29 +9,28 @@ class CitySection extends React.Component {
             
         }
     }
+
+    handleItemClick(item) {
+        this.props.handleItemClick(item);
+    }
+
     render() {
+        const data = this.props.data;
         return (
             <div className="city-section">
-                <div className="title">热门城市</div>
-                <ul className="content">
-                    <li>北京</li>
-                    <li>北京</li>
-                    <li>北京</li>
-                    <li>北京</li>
-                    <li>北京</li>
-                    <li>北京</li>
-                    <li>北京</li>
-                    <li>北京</li>
-                    <li>北京</li>
-                    <li>北京</li>
-                    <li>北京</li>
-                    <li>北京</li>
+                <div className="title">{data.title}</div>
+                <ul className={data.title === "更多城市" ? "more" : "content"}>
+                    {
+                        data.items.map((item, index) => {                            
+                            return (
+                                <li onClick={this.handleItemClick.bind(this, {"item": item, "title":data.title})} key={index}>{item}</li>
+                            )
+                        })
+                    }
                 </ul>
             </div>
         )
     }
 }
 
-// 使用 require.ensure 异步加载，还不支持 ES6 的 export 
-// export default City
 export default CitySection
